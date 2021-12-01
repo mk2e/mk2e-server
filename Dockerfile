@@ -1,8 +1,7 @@
-FROM mariadb:latest
+FROM debian
 
-ENV MYSQL_USER mk2e
-ENV MYSQL_PASSWORD mk2e
-ENV MYSQL_DATABASE testdb
-ENV MYSQL_ALLOW_EMPTY_PASSWORD yes
+RUN apt-get update 
+RUN apt-get upgrade
+RUN apt-get install mariadb-server mariadb-client 
 
 EXPOSE 3306
