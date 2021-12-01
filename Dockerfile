@@ -1,4 +1,4 @@
-FROM mysql:latest
+FROM mariadb:latest
 
 ENV MYSQL_USER mk2e
 ENV MYSQL_PASSWORD mk2e
